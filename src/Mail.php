@@ -48,7 +48,7 @@ class Mail
             return true;
         }
         catch (\Exception  $e) {
-          throw new \Exception($e->getMessage());
+          throw $e;
         }
     }
 
